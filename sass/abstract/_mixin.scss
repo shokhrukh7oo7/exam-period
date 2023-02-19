@@ -1,0 +1,13 @@
+@mixin grid {
+  display: grid;
+  align-items: center;
+}
+
+@mixin flex {
+  display: grid;
+  align-items: center;
+}
+
+@mixin width {
+  width: 100%;
+}

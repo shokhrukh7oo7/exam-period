@@ -1,0 +1,159 @@
+#backtop {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  padding: 20px;
+  border: 2px solid white;
+  z-index: 9;
+  border-radius: 50%;
+  background-color: #242424;
+  a {
+    color: #bb2339;
+  }
+}
+
+.df-jcsb-aic {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.primary-button {
+  padding: 10px 40px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 100px;
+  &:hover {
+    color: #bb2339;
+    background-color: #1c1d28;
+    transition: all 0.5s ease-in-out;
+  }
+}
+
+#header {
+  padding: 20px 0px;
+  background-color: #bb2339;
+  overflow: hidden;
+  transition: 0.4s;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+
+  .nav-right {
+    .nav-lists {
+      column-gap: 40px;
+
+      a {
+        font-family: "Open Sans", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.04em;
+        color: #ffffff;
+
+        &:hover {
+          color: #1c1d28;
+          transition: 0.5s;
+        }
+      }
+    }
+  }
+
+  .nav-right {
+    display: flex;
+    gap: 40px;
+    .fa-bars {
+      width: 20px;
+      color: white;
+    }
+  }
+}
+
+/*-- navigation bar mobile---*/
+#navbar-responsive {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: -100%;
+  height: 100vh;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #bb2339;
+  transition: 0.7s;
+
+  .nav-box {
+    display: flex;
+    justify-content: right;
+
+    #navbar-close {
+      margin: 45px 22px 0px 0px;
+      &:hover {
+        transition: 1s;
+      }
+    }
+  }
+
+  .nav-position {
+    text-align: center;
+    .button-res {
+      padding: 10px 40px;
+      color: #ffffff;
+      border: 1px solid #ffffff;
+      border-radius: 100px;
+      &:hover {
+        color: #bb2339;
+        background-color: #1c1d28;
+        transition: all 0.5s ease-in-out;
+      }
+    }
+
+    li {
+      margin: 50px 0px;
+
+      a {
+        font-weight: 400;
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #ffffff;
+        opacity: 0.9;
+
+        &:hover {
+          color: #1c1d28;
+          transition: 0.5s;
+        }
+      }
+    }
+  }
+}
+/*-- navigation bar mobile---*/
+
+@media (min-width: 940px) {
+  header {
+    #navbar-open {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 940px) {
+  header {
+    .nav-lists {
+      display: none;
+    }
+
+    .primary-button {
+      display: none;
+    }
+  }
+}
